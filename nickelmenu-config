@@ -1,0 +1,18 @@
+# Save this file (any filename works) into .adds/nm/ on your Kobo,
+# e.g. .adds/nm/kobo-library-shortcuts, then reboot the device.
+#
+# Syntax verified against the current NickelMenu source
+# (github.com/pgaskin/NickelMenu, res/doc) on 16 July 2026.
+
+# --- Native Kobo library sources (built into stock Nickel firmware) ---
+
+# Instapaper articles — requires firmware 4.43.23418 or later.
+menu_item :main :Instapaper :nickel_open :library:instapaper
+
+# Google Drive-synced books — this is where your converted KEPUBs land
+# (the "converted" folder from the pipeline). Requires firmware 4.36.21095+.
+menu_item :main :Google Drive :nickel_open :library:gdrive
+
+# Forces Nickel to rescan for newly synced files so they show up in
+# your library promptly.
+menu_item :main :Refresh Library :nickel_misc :rescan_books_full
